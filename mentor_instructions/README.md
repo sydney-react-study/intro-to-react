@@ -15,7 +15,8 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 5.  Make file in folder src/data/menuData.js and copy code from https://gist.github.com/saussayjesica/50f6801bcb3b689e777c2c6fc017c0db
 6.  Run `yarn` if not already
 7.  Delete all code in App.js
-8.  [Create App component](03.md) from scratch - import react, create class, render, return, export default etc. Explain JSX and mention it should be wrapped in an enclosing tag
+8.  [Create App component](03.md) from scratch - import react, create class, render, return, export default etc. 
+9.  Explain [JSX](04.md) and mention it should be wrapped in an enclosing tag.
 
 ## Create Header component
 
