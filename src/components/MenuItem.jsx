@@ -1,22 +1,23 @@
 import React from 'react';
 
-const MenuItem = () => {
+const MenuItem = ({ emoji, label, name, description, price, updateOrder }) => {
   return (
     <div className="menuitem__wrapper">
       <div>
-        <span role="img" aria-label="label" className="menuitem__emoji">
-          emoji
+        <span role="img" aria-label={label} className="menuitem__emoji">
+          {emoji}
         </span>
       </div>
       <div className="menuitem__column">
-        <div className="menuitem__name">name</div>
-        <div className="menuitem__description">description</div>
+        <div className="menuitem__name">{name}</div>
+        <div className="menuitem__description">{description}</div>
         <button className="menuitem__button">
           add to order
         </button>
       </div>
       <div className="menuitem__price">
-        $10.00
+        ${price}
+        .00
       </div>
     </div>
   );
