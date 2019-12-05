@@ -30,3 +30,10 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 3.  Import the menuData in the App.js file as well as the menuItem component. Add the following props to menuItem - emoji, label, name, description, price
 4.  Assign the data for the first item in the menuData to the props eg. `name={menuData[0].name}`
 5.  Explain how we could have a menuItem in App.js for every item on our menu but this isn't very dynamic. So we want to use the map method so we can dynamically render a menuItem for every item in the data. Explanation for map is in the README. Make sure you update the `props` and add a `key` using the index.
+
+## Adding state
+
+1.  Add state to the App.js file (we add it to App.js because it's used in both menuItem and Order). Order will be an empty array and cost will be 0.
+2.  Create the handleUpdate function in App.js. Explain [parameters, arguments](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04), setState and concatenate
+3.  The button is in MenuItem so when we click on the button we need to call the method in App.js. To do this we will need to pass the method to menuItem as a prop and call the prop with onClick
+4.  Use the react devtools to see state updating when the button is clicked
