@@ -34,6 +34,6 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 ## Adding state
 
 1.  [Add state](06.md) to the App.js file (we add it to App.js because it's used in both menuItem and Order). Order will be an empty array and cost will be 0.
-2.  Create the handleUpdate function in App.js. Explain [parameters, arguments](https://codeburst.io/parameters-arguments-in-javascript-eb1d8bd0ef04), setState and concatenate
+2.  Create the handleUpdate function in App.js. Explain parameters, arguments, setState and concatenate
 3.  The button is in MenuItem so when we click on the button we need to call the method in App.js. To do this we will need to pass the method to menuItem as a prop and call the prop with onClick
 4.  Use the react devtools to see state updating when the button is clicked
