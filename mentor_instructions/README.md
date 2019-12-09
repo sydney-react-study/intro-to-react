@@ -48,3 +48,11 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 6.  Before adding the buttons, add the `resetOrder` method to app.js and pass this method to the order component as a prop.
 7.  Add the reset button to the order component and test that it works.
 8.  Add the `submitOrder` method to app.js and then pass the method down to Order and add the submit button to the order component.
+
+## Lifecycle methods
+
+1.  Briefly explain componentDidMount and how we will use it to fetch the menudata
+2.  Add componentDidMount to App.js and create a setTimeout function that saves the menudata to state after 3secs.
+3.  Update state with data
+4.  Create the loading component
+5.  Add a ternary to display the loading if the data isn't ready

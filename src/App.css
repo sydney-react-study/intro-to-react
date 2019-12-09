@@ -195,14 +195,14 @@
 .loader,
 .loader:before,
 .loader:after {
-  background: #7b8bfb;
+  background: #27f573;
   -webkit-animation: load 1s infinite ease-in-out;
   animation: load 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
 }
 .loader {
-  color: #7b8bfb;
+  color: #27f573;
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;

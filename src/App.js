@@ -4,17 +4,25 @@ import Header from './components/Header';
 import MenuItem from './components/MenuItem';
 import Order from './components/Order';
 import SucessOrder from './components/SucessOrder';
+import Loading from './components/Loading';
 import { menuData } from './data/menuData';
 class App extends Component {
   state = {
     order: [],
     total: 0,
-    data: menuData,
+    data: [],
     isOrderSubmitted: false,
   };
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ data: menuData });
+    }, 3000);
+  }
+
+
   handleUpdate = (name, price) => {
-    const newItem =  [{ name, price }] ;
+    const newItem =  [{ name, price }] ;  
     // this.setState(({ order, total }) => ({
     //   order: [...order, newItem],
     //   total: total + price
@@ -43,7 +51,8 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <div className="menu">
+        {data.length > 0 ? (
+          <div className="menu">
             <div className="menuitems">
               {data.map((item, index) => (
                 <MenuItem
@@ -69,6 +78,9 @@ class App extends Component {
               />
             }
           </div>
+        ) : (
+          <Loading />
+        )}
       </div>
     );
   }
