@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <div className="header__wrapper">
         <span role="img" aria-label="plates" className="header__emoji">
-          🍽
+          🥨
         </span>
         <h1 className="header__title">
           emoji eats
