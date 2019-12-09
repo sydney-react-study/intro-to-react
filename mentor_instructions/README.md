@@ -56,3 +56,11 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 3.  Update state with data
 4.  Create the loading component
 5.  Add a ternary to display the loading if the data isn't ready
+
+TODO:
+## Refactor
+
+1.  Update components that are not using state to stateless functional components
+2.  Destructure state and props
+3.  Add propTypes
+4.  Use hooks
