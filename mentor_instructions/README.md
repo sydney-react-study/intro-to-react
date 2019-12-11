@@ -3,25 +3,25 @@
 ---
 
 ## Introduction
-Give an brief [introduction](01.md) and explain how to [thinking and understanding React Compments](02.md)
+Give a brief [introduction](01.md) and explain how to [thinking and understanding React Compments](02.md)
 
 ## Setup
 
 1.  Create react app (`npx create-react-app emoji-eats`)
 2.  Delete all unecessary files
-3.  Replace app.css with [this](https://gist.github.com/ticidesign/12640a2a4b2587c94a25fd6552a315c0)
-4.  Add google font to index.html (Go to public/index.html in your repo. Add the following <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet"> underneath the shortcut icon link element on line 13)
+3.  Replace `app.css` with [this](https://gist.github.com/ticidesign/12640a2a4b2587c94a25fd6552a315c0)
+4.  Add google font to `index.html` (Go to public/index.html in your repo. Add the following <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet"> underneath the shortcut icon link element on line 13)
 
 5.  Make file in folder src/data/menuData.js and copy code from [here](https://gist.github.com/ticidesign/23e63112790d9489b257d648608c9971)
 6.  Run `yarn` if not already
-7.  Delete all code in App.js
+7.  Delete all code in `App.js`
 8.  [Create App component](03.md) from scratch - import react, create class, render, return, export default etc. 
 9.  Explain [JSX](04.md) and mention it should be wrapped in an enclosing tag.
 
 ## Create Header component
 
 1.  Make class component and later when we go over state we can make it a stateless functional component.
-2.  Add the Header into App.js.
+2.  Add the Header into `App.js`.
 
 ## Create MenuItem component
 
@@ -51,8 +51,8 @@ Give an brief [introduction](01.md) and explain how to [thinking and understandi
 
 ## Lifecycle methods
 
-1.  Briefly explain [lifecycle methods]((07.md) and `componentDidMount` and how we will use it to fetch the menudata
-2.  Add componentDidMount to App.js and create a setTimeout function that saves the menudata to state after 3 secs.
+1.  Briefly explain [lifecycle methods](07.md) and `componentDidMount` and how we will use it to fetch the menudata
+2.  Add `componentDidMount` to `App.js` and create a `setTimeout` function that saves the menudata to state after 3 secs.
 3.  Update state with data
 4.  Create the loading component
 5.  Add a ternary to display the loading if the data isn't ready
